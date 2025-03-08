@@ -1,0 +1,61 @@
+syntax = "proto3";
+
+option go_package = "./userproto";
+
+service UserService{
+    rpc SignUp(SignUpReq) returns(Response);
+    rpc SignIn(SignINReq) returns(Response);
+    rpc GetUsersbyId(UsersbyId) returns(User);
+    rpc GetUsers(UsersEmpty) returns(ListUsersRes);
+    rpc UpdateUsers(UpdateReq) returns(UpdateRes);
+    rpc DeleteUsers(UsersbyId) returns(UpdateRes);
+}
+
+
+message User{
+    string id       = 1;
+    string email    = 2;
+    string username = 3;
+    string password = 4;
+    string fullname = 5;
+    string created_at = 6;     
+    string updated_at = 7;
+}
+
+message SignUpReq{
+    string email    = 1;
+    string username = 2;
+    string password = 3;
+    string fullname = 4;
+}
+
+message Response{
+    string token    = 1;
+}
+
+message SignINReq{
+    string email    = 1;
+    string password = 2;
+}
+
+message UsersbyId{
+    string id       = 1;
+}
+
+message UsersEmpty{}
+
+message ListUsersRes{
+    repeated User users = 1;
+}
+
+message UpdateReq{
+    string id       = 1;
+    string email    = 2;
+    string username = 3;
+    string password = 4;
+    string fullname = 5;
+}
+
+message UpdateRes{
+    string message  = 1;
+}

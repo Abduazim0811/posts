@@ -57,7 +57,7 @@ func (u *UserGrpc) SignIn(ctx context.Context, req *pb.SignINReq) (*pb.Response,
 	}, nil
 }
 
-func (u *UserGrpc) GetUsersById(ctx context.Context, req *pb.UsersbyId) (*pb.User, error) {
+func (u *UserGrpc) GetUsersbyId(ctx context.Context, req *pb.UsersbyId) (*pb.User, error) {
 	logger.Logger.Printf("gRPC GetUsersById chaqirildi: id=%s", req.Id)
 
 	getReq := users.UsersbyId{
@@ -71,6 +71,33 @@ func (u *UserGrpc) GetUsersById(ctx context.Context, req *pb.UsersbyId) (*pb.Use
 	}
 	if resp == nil {
 		logger.Logger.Printf("Foydalanuvchi topilmadi: id=%s", req.Id)
+		return nil, nil
+	}
+
+	return &pb.User{
+		Id:       resp.ID,
+		Email:    resp.Email,
+		Username: resp.Username,
+		Fullname: resp.Fullname,
+		CreatedAt: resp.CreatedAt,
+		UpdatedAt: resp.UpdatedAt,
+	}, nil
+}
+
+func (u *UserGrpc) GetUsersbyUsername(ctx context.Context, req *pb.GetbyUsernameReq) (*pb.User, error){
+	logger.Logger.Printf("gRPC GetUsersByUsername chaqirildi: username=%s", req.Username)
+
+	getReq := users.UsersbyUsername{
+		Username: req.Username,
+	}
+
+	resp, err := u.svc.GetUsersbyUsername(ctx, getReq)
+	if err != nil {
+		logger.Logger.Printf("GetUsersById xatosi: %v", err)
+		return nil, err
+	}
+	if resp == nil {
+		logger.Logger.Printf("Foydalanuvchi topilmadi: username=%s", req.Username)
 		return nil, nil
 	}
 

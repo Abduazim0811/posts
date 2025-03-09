@@ -3,24 +3,48 @@ package postservice
 import (
 	"context"
 	"post-service/internal/entity/post"
+	"post-service/internal/logger"
 	"post-service/internal/service"
 	pb "post-service/protos/postProto/postproto"
-	"post-service/internal/logger"
+	userpb "post-service/protos/userProto/userproto"
+
+	"google.golang.org/grpc/codes"
+	"google.golang.org/grpc/status"
 )
 
 type PostGrpc struct {
 	pb.UnimplementedPostServiceServer
-	svc service.PostService
+	svc        service.PostService
+	userClient userpb.UserServiceClient
 }
 
-func NewPostGrpc(svc service.PostService) *PostGrpc {
+func NewPostGrpc(svc service.PostService, userConn *userpb.UserServiceClient) *PostGrpc {
 	return &PostGrpc{
-		svc: svc,
+		svc:        svc,
+		userClient: *userConn,
 	}
+}
+
+func (s *PostGrpc) verifyUsername(ctx context.Context, username string) error {
+	_, err := s.userClient.GetUsersbyUsername(ctx, &userpb.GetbyUsernameReq{Username: username})
+	if err != nil {
+		if status.Code(err) == codes.NotFound {
+			logger.Logger.Printf("verifyUsername: Foydalanuvchi topilmadi: username=%s", username)
+			return status.Error(codes.NotFound, "User not found")
+		}
+		logger.Logger.Printf("verifyUsername: User service xatosi: %v", err)
+		return status.Error(codes.Internal, "Internal server error")
+	}
+	logger.Logger.Printf("verifyUsername: Foydalanuvchi tasdiqlandi: username=%s", username)
+	return nil
 }
 
 func (s *PostGrpc) CreatePost(ctx context.Context, req *pb.CreatePostRequest) (*pb.PostResponse, error) {
 	logger.Logger.Printf("gRPC CreatePost chaqirildi: username=%s, title=%s", req.Username, req.Title)
+
+	if err := s.verifyUsername(ctx, req.Username); err != nil {
+		return nil, err
+	}
 
 	createReq := post.CreatePostRequest{
 		Username: req.Username,
@@ -68,10 +92,10 @@ func (s *PostGrpc) GetPost(ctx context.Context, req *pb.GetPostRequest) (*pb.Get
 }
 
 func (s *PostGrpc) ListPosts(ctx context.Context, req *pb.ListPostsRequest) (*pb.ListPostsResponse, error) {
-	logger.Logger.Printf("gRPC ListPosts chaqirildi: username=%s, page=%d, limit=%d", req.Username, req.Page, req.Limit)
+	logger.Logger.Printf("gRPC ListPosts chaqirildi:  page=%d, limit=%d", req.Page, req.Limit)
+
 
 	listReq := post.ListPostsRequest{
-		Username: req.Username,
 		Page:     req.Page,
 		Limit:    req.Limit,
 	}
@@ -85,11 +109,11 @@ func (s *PostGrpc) ListPosts(ctx context.Context, req *pb.ListPostsRequest) (*pb
 	pbPosts := make([]*pb.GetPostResponse, len(resp.Posts))
 	for i, p := range resp.Posts {
 		pbPosts[i] = &pb.GetPostResponse{
-			Id:        p.ID,
-			Username:  p.Username,
-			Title:     p.Title,
-			Content:   p.Content,
-			Tags:      p.Tags,
+			Id:       p.ID,
+			Username: p.Username,
+			Title:    p.Title,
+			Content:  p.Content,
+			Tags:     p.Tags,
 		}
 	}
 
@@ -106,7 +130,7 @@ func (s *PostGrpc) UpdatePost(ctx context.Context, req *pb.UpdatePostRequest) (*
 		ID:      req.Id,
 		Title:   req.Title,
 		Content: req.Content,
-		Tags:    req.Tags,
+		Tags:    req.Tags, 
 	}
 
 	resp, err := s.svc.UpdatePost(updateReq)
@@ -118,11 +142,27 @@ func (s *PostGrpc) UpdatePost(ctx context.Context, req *pb.UpdatePostRequest) (*
 	return &pb.PostResponse{
 		Id:      resp.ID,
 		Message: resp.Message,
+		Title:   resp.Title,
+		Content: resp.Content, 
+		Tags:    resp.Tags,    
+		Username: resp.Username, 
 	}, nil
 }
-
 func (s *PostGrpc) DeletePost(ctx context.Context, req *pb.DeletePostRequest) (*pb.DeletePostResponse, error) {
 	logger.Logger.Printf("gRPC DeletePost chaqirildi: id=%s", req.Id)
+
+	postt, err := s.svc.GetPost(post.GetPostRequest{ID: req.Id})
+	if err != nil {
+		logger.Logger.Printf("DeletePost: Postni olishda xato: %v", err)
+		return nil, err
+	}
+	if postt == nil {
+		logger.Logger.Printf("DeletePost: Post topilmadi: id=%s", req.Id)
+		return nil, status.Error(codes.NotFound, "Post not found")
+	}
+	if err := s.verifyUsername(ctx, postt.Username); err != nil {
+		return nil, err
+	}
 
 	deleteReq := post.DeletePostRequest{
 		ID: req.Id,

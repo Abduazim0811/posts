@@ -1,0 +1,108 @@
+POSTGRES: 2025/03/09 14:27:47 user.go:42: SignUp: So`rov qabul qilindi: username=Abdu0811, email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 14:27:48 user.go:49: SignUp: gRPC xatosi: rpc error: code = Unknown desc = pq: relation "users" does not exist
+POSTGRES: 2025/03/09 14:32:30 user.go:42: SignUp: So`rov qabul qilindi: username=Abdu0811, email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 14:32:30 user.go:49: SignUp: gRPC xatosi: rpc error: code = Unknown desc = pq: relation "users" does not exist
+POSTGRES: 2025/03/09 14:39:53 user.go:42: SignUp: So`rov qabul qilindi: username=Abdu, email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 14:39:53 user.go:49: SignUp: gRPC xatosi: rpc error: code = Unknown desc = pq: relation "users" does not exist
+POSTGRES: 2025/03/09 14:41:53 user.go:42: SignUp: So`rov qabul qilindi: username=Abdu, email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 14:41:53 user.go:49: SignUp: gRPC xatosi: rpc error: code = Unknown desc = pq: relation "userss" does not exist
+POSTGRES: 2025/03/09 14:48:59 user.go:42: SignUp: So`rov qabul qilindi: username=Abdu, email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 14:48:59 user.go:49: SignUp: gRPC xatosi: rpc error: code = Unknown desc = pq: relation "public.users" does not exist
+POSTGRES: 2025/03/09 14:52:09 user.go:42: SignUp: So`rov qabul qilindi: username=Abdu0811, email=yusupovabduazim0811
+POSTGRES: 2025/03/09 14:52:10 user.go:49: SignUp: gRPC xatosi: rpc error: code = Unknown desc = pq: relation "public.users" does not exist
+POSTGRES: 2025/03/09 14:57:57 user.go:42: SignUp: So`rov qabul qilindi: username=string, email=string
+POSTGRES: 2025/03/09 14:57:57 user.go:49: SignUp: gRPC xatosi: rpc error: code = Unknown desc = pq: relation "public.users" does not exist
+POSTGRES: 2025/03/09 14:57:58 user.go:42: SignUp: So`rov qabul qilindi: username=string, email=string
+POSTGRES: 2025/03/09 14:57:58 user.go:49: SignUp: gRPC xatosi: rpc error: code = Unknown desc = pq: relation "public.users" does not exist
+POSTGRES: 2025/03/09 14:58:39 user.go:42: SignUp: So`rov qabul qilindi: username=string, email=string
+POSTGRES: 2025/03/09 14:58:40 user.go:49: SignUp: gRPC xatosi: rpc error: code = Unknown desc = pq: relation "users" does not exist
+POSTGRES: 2025/03/09 15:20:16 user.go:42: SignUp: So`rov qabul qilindi: username=string, email=string
+POSTGRES: 2025/03/09 15:20:16 user.go:49: SignUp: gRPC xatosi: rpc error: code = Unknown desc = pq: relation "users" does not exist
+POSTGRES: 2025/03/09 15:21:15 user.go:42: SignUp: So`rov qabul qilindi: username=string, email=string
+POSTGRES: 2025/03/09 15:21:15 user.go:49: SignUp: gRPC xatosi: rpc error: code = Unknown desc = pq: relation "users" does not exist
+POSTGRES: 2025/03/09 15:22:47 user.go:42: SignUp: So`rov qabul qilindi: username=Abdu0811, email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 15:22:47 user.go:54: SignUp: Muvaffaqiyatli yakunlandi: Token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Inl1c3Vwb3ZhYmR1YXppbTA4MTFAZ21haWwuY29tIiwiZXhwIjoxNzQxNjAyMTY3LCJpYXQiOjE3NDE1MTU3Njd9.ohztrBNHY6QzJNs-AYGy0e4MQHtzGkEV431vVhqIqRI
+POSTGRES: 2025/03/09 15:23:12 jwt.go:27: AuthMiddleware: Noto`g`ri token formati
+POSTGRES: 2025/03/09 15:26:20 jwt.go:27: AuthMiddleware: Noto`g`ri token formati token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Inl1c3Vwb3ZhYmR1YXppbTA4MTFAZ21haWwuY29tIiwiZXhwIjoxNzQxNjAyMTY3LCJpYXQiOjE3NDE1MTU3Njd9.ohztrBNHY6QzJNs-AYGy0e4MQHtzGkEV431vVhqIqRI
+POSTGRES: 2025/03/09 15:29:05 jwt.go:43: AuthMiddleware: Token tekshiruvda xato: signature is invalid
+POSTGRES: 2025/03/09 15:31:43 jwt.go:43: AuthMiddleware: Token tekshiruvda xato: signature is invalid
+POSTGRES: 2025/03/09 15:33:43 jwt.go:27: AuthMiddleware: Noto`g`ri token formati token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Inl1c3Vwb3ZhYmR1YXppbTA4MTFAZ21haWwuY29tIiwiZXhwIjoxNzQxNjAyMTY3LCJpYXQiOjE3NDE1MTU3Njd9.ohztrBNHY6QzJNs-AYGy0e4MQHtzGkEV431vVhqIqRI
+POSTGRES: 2025/03/09 15:35:04 jwt.go:43: AuthMiddleware: Token tekshiruvda xato: signature is invalid
+POSTGRES: 2025/03/09 15:37:16 user.go:77: SignIn: So`rov qabul qilindi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 15:37:16 user.go:84: SignIn: gRPC xatosi: rpc error: code = Unknown desc = pq: column "password" does not exist
+POSTGRES: 2025/03/09 15:38:57 user.go:77: SignIn: So`rov qabul qilindi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 15:38:57 user.go:89: SignIn: Muvaffaqiyatli yakunlandi: Token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Inl1c3Vwb3ZhYmR1YXppbTA4MTFAZ21haWwuY29tIiwiZXhwIjoxNzQxNjAzMTM3LCJpYXQiOjE3NDE1MTY3Mzd9.O-ig04GITAqDo2l0pDWd6msMOvcRH5NVZsufDMLSh_Y
+POSTGRES: 2025/03/09 15:39:14 user.go:144: GetUsers: So`rov qabul qilindi
+POSTGRES: 2025/03/09 15:39:14 user.go:156: GetUsers: Muvaffaqiyatli yakunlandi: jami=1
+POSTGRES: 2025/03/09 15:39:29 user.go:113: GetUsersbyId: So`rov qabul qilindi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:39:29 user.go:120: GetUsersbyId: gRPC xatosi: rpc error: code = Unimplemented desc = method GetUsersbyId not implemented
+POSTGRES: 2025/03/09 15:44:56 user.go:77: SignIn: So`rov qabul qilindi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 15:44:56 user.go:89: SignIn: Muvaffaqiyatli yakunlandi: Token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Inl1c3Vwb3ZhYmR1YXppbTA4MTFAZ21haWwuY29tIiwiZXhwIjoxNzQxNjAzNDk2LCJpYXQiOjE3NDE1MTcwOTZ9.E1UDf3eEgw0DfUQGsMJNhgcl5UZIwpqR8rgD4SPiOKs
+POSTGRES: 2025/03/09 15:45:14 user.go:144: GetUsers: So`rov qabul qilindi
+POSTGRES: 2025/03/09 15:45:14 user.go:156: GetUsers: Muvaffaqiyatli yakunlandi: jami=1
+POSTGRES: 2025/03/09 15:45:31 user.go:113: GetUsersbyId: So`rov qabul qilindi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:45:31 user.go:130: GetUsersbyId: Muvaffaqiyatli yakunlandi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:45:55 user.go:189: UpdateUsers: So`rov qabul qilindi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:45:55 user.go:196: UpdateUsers: gRPC xatosi: rpc error: code = Unknown desc = pq: column "deleted_at" does not exist
+POSTGRES: 2025/03/09 15:47:59 user.go:189: UpdateUsers: So`rov qabul qilindi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:47:59 user.go:201: UpdateUsers: Muvaffaqiyatli yakunlandi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:48:08 user.go:113: GetUsersbyId: So`rov qabul qilindi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:48:08 user.go:130: GetUsersbyId: Muvaffaqiyatli yakunlandi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:48:41 user.go:224: DeleteUsers: So`rov qabul qilindi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:48:41 user.go:231: DeleteUsers: gRPC xatosi: rpc error: code = Unknown desc = pq: column "deleted_at" of relation "users" does not exist
+POSTGRES: 2025/03/09 15:49:02 user.go:224: DeleteUsers: So`rov qabul qilindi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:49:02 user.go:231: DeleteUsers: gRPC xatosi: rpc error: code = Unknown desc = update statements must have at least one Set clause
+POSTGRES: 2025/03/09 15:49:40 user.go:224: DeleteUsers: So`rov qabul qilindi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:49:40 user.go:236: DeleteUsers: Muvaffaqiyatli yakunlandi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:49:42 user.go:224: DeleteUsers: So`rov qabul qilindi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:49:42 user.go:236: DeleteUsers: Muvaffaqiyatli yakunlandi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:50:24 user.go:224: DeleteUsers: So`rov qabul qilindi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:50:24 user.go:231: DeleteUsers: gRPC xatosi: rpc error: code = Unknown desc = users not found
+POSTGRES: 2025/03/09 16:11:26 user.go:42: SignUp: So`rov qabul qilindi: username=Abdu0811, email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 16:11:26 user.go:54: SignUp: Muvaffaqiyatli yakunlandi: Token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Inl1c3Vwb3ZhYmR1YXppbTA4MTFAZ21haWwuY29tIiwiZXhwIjoxNzQxNjA1MDg2LCJpYXQiOjE3NDE1MTg2ODZ9.3PdSl-qpTBDus_J5GZrO7Bjo614u0pa8yrYWVPYV29k
+POSTGRES: 2025/03/09 16:13:45 post.go:44: CreatePost: So`rov qabul qilindi: username=Abdu0811, title=O‘zbekistonda Go dasturlash
+POSTGRES: 2025/03/09 16:13:45 post.go:51: CreatePost: gRPC xatosi: rpc error: code = Unknown desc = sql: converting argument $4 type: unsupported type []string, a slice of string
+POSTGRES: 2025/03/09 16:14:05 post.go:44: CreatePost: So`rov qabul qilindi: username=Abdu0811, title=O‘zbekistonda Go dasturlash
+POSTGRES: 2025/03/09 16:14:05 post.go:51: CreatePost: gRPC xatosi: rpc error: code = Unknown desc = sql: converting argument $4 type: unsupported type []string, a slice of string
+POSTGRES: 2025/03/09 16:16:54 post.go:44: CreatePost: So`rov qabul qilindi: username=Abdu0811, title=O‘zbekistonda Go dasturlash
+POSTGRES: 2025/03/09 16:16:54 post.go:51: CreatePost: gRPC xatosi: rpc error: code = Unknown desc = sql: converting argument $4 type: unsupported type []string, a slice of string
+POSTGRES: 2025/03/09 16:19:08 post.go:44: CreatePost: So`rov qabul qilindi: username=Abdu0811, title=O`zbekistonda Go dasturlash
+POSTGRES: 2025/03/09 16:19:08 post.go:51: CreatePost: gRPC xatosi: rpc error: code = Unknown desc = sql: converting argument $4 type: unsupported type []string, a slice of string
+POSTGRES: 2025/03/09 16:21:29 post.go:44: CreatePost: So`rov qabul qilindi: username=Abdu0811, title=O`zbekistonda Go dasturlash
+POSTGRES: 2025/03/09 16:21:29 post.go:56: CreatePost: Muvaffaqiyatli yakunlandi: id=0e027dad-d1e0-4b38-991b-5d2262af393e
+POSTGRES: 2025/03/09 16:21:49 post.go:79: GetPost: So`rov qabul qilindi: id=0e027dad-d1e0-4b38-991b-5d2262af393e
+POSTGRES: 2025/03/09 16:21:49 post.go:93: GetPost: Muvaffaqiyatli yakunlandi: id=0e027dad-d1e0-4b38-991b-5d2262af393e
+POSTGRES: 2025/03/09 16:22:11 post.go:152: UpdatePost: So`rov qabul qilindi: id=0e027dad-d1e0-4b38-991b-5d2262af393e
+POSTGRES: 2025/03/09 16:22:11 post.go:166: UpdatePost: Muvaffaqiyatli yakunlandi: id=0e027dad-d1e0-4b38-991b-5d2262af393e
+POSTGRES: 2025/03/09 16:22:50 post.go:79: GetPost: So`rov qabul qilindi: id=0e027dad-d1e0-4b38-991b-5d2262af393e
+POSTGRES: 2025/03/09 16:22:50 post.go:93: GetPost: Muvaffaqiyatli yakunlandi: id=0e027dad-d1e0-4b38-991b-5d2262af393e
+POSTGRES: 2025/03/09 16:37:20 user.go:77: SignIn: So`rov qabul qilindi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 16:37:20 user.go:89: SignIn: Muvaffaqiyatli yakunlandi: Token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Inl1c3Vwb3ZhYmR1YXppbTA4MTFAZ21haWwuY29tIiwiZXhwIjoxNzQxNjA2NjQwLCJpYXQiOjE3NDE1MjAyNDB9.6j9ledeiUnE-wslLNWYT8siZIZs90Gg5EjiduBo--tw
+POSTGRES: 2025/03/09 16:39:56 post.go:152: UpdatePost: So`rov qabul qilindi: id=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Inl1c3Vwb3ZhYmR1YXppbTA4MTFAZ21haWwuY29tIiwiZXhwIjoxNzQxNjA2NjQwLCJpYXQiOjE3NDE1MjAyNDB9.6j9ledeiUnE-wslLNWYT8siZIZs90Gg5EjiduBo--tw
+POSTGRES: 2025/03/09 16:39:56 post.go:161: UpdatePost: gRPC xatosi: rpc error: code = Unknown desc = pq: invalid input syntax for type uuid: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Inl1c3Vwb3ZhYmR1YXppbTA4MTFAZ21haWwuY29tIiwiZXhwIjoxNzQxNjA2NjQwLCJpYXQiOjE3NDE1MjAyNDB9.6j9ledeiUnE-wslLNWYT8siZIZs90Gg5EjiduBo--tw"
+POSTGRES: 2025/03/09 16:57:06 user.go:77: SignIn: So`rov qabul qilindi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 16:57:06 user.go:89: SignIn: Muvaffaqiyatli yakunlandi: Token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Inl1c3Vwb3ZhYmR1YXppbTA4MTFAZ21haWwuY29tIiwiZXhwIjoxNzQxNjA3ODI2LCJpYXQiOjE3NDE1MjE0MjZ9.IX1ytjLSsxEbikSsxjV0MhdQ9MDcJjRNG9A-TnIner4
+POSTGRES: 2025/03/09 16:57:33 post.go:119: ListPosts: So`rov qabul qilindi: username=, page=0, limit=0
+POSTGRES: 2025/03/09 16:57:33 post.go:131: ListPosts: Muvaffaqiyatli yakunlandi: total=0
+POSTGRES: 2025/03/09 16:57:42 post.go:119: ListPosts: So`rov qabul qilindi: username=, page=0, limit=0
+POSTGRES: 2025/03/09 16:57:42 post.go:131: ListPosts: Muvaffaqiyatli yakunlandi: total=0
+POSTGRES: 2025/03/09 16:57:44 post.go:119: ListPosts: So`rov qabul qilindi: username=, page=0, limit=0
+POSTGRES: 2025/03/09 16:57:44 post.go:131: ListPosts: Muvaffaqiyatli yakunlandi: total=0
+POSTGRES: 2025/03/09 16:58:43 post.go:119: ListPosts: So`rov qabul qilindi: username=, page=0, limit=0
+POSTGRES: 2025/03/09 16:58:43 post.go:131: ListPosts: Muvaffaqiyatli yakunlandi: total=0
+POSTGRES: 2025/03/09 16:58:49 post.go:119: ListPosts: So`rov qabul qilindi: username=, page=0, limit=0
+POSTGRES: 2025/03/09 16:58:49 post.go:131: ListPosts: Muvaffaqiyatli yakunlandi: total=0
+POSTGRES: 2025/03/09 16:58:53 post.go:119: ListPosts: So`rov qabul qilindi: username=, page=0, limit=0
+POSTGRES: 2025/03/09 16:58:53 post.go:131: ListPosts: Muvaffaqiyatli yakunlandi: total=0
+POSTGRES: 2025/03/09 17:01:02 post.go:119: ListPosts: So`rov qabul qilindi: username=, page=0, limit=0
+POSTGRES: 2025/03/09 17:01:02 post.go:131: ListPosts: Muvaffaqiyatli yakunlandi: total=0
+POSTGRES: 2025/03/09 17:03:08 post.go:119: ListPosts: So`rov qabul qilindi: username=, page=0, limit=0
+POSTGRES: 2025/03/09 17:03:08 post.go:131: ListPosts: Muvaffaqiyatli yakunlandi: total=0
+POSTGRES: 2025/03/09 17:04:30 post.go:119: ListPosts: So`rov qabul qilindi: username=, page=0, limit=0
+POSTGRES: 2025/03/09 17:04:30 post.go:131: ListPosts: Muvaffaqiyatli yakunlandi: total=0
+POSTGRES: 2025/03/09 17:08:34 post.go:79: GetPost: So`rov qabul qilindi: id=0e027dad-d1e0-4b38-991b-5d2262af393e
+POSTGRES: 2025/03/09 17:08:34 post.go:88: GetPost: gRPC xatosi: rpc error: code = Unknown desc = sql: Scan error on column index 4, name "tags": unsupported Scan, storing driver.Value type []uint8 into type *[]string
+POSTGRES: 2025/03/09 17:14:52 user.go:77: SignIn: So`rov qabul qilindi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 17:14:53 user.go:89: SignIn: Muvaffaqiyatli yakunlandi: Token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Inl1c3Vwb3ZhYmR1YXppbTA4MTFAZ21haWwuY29tIiwiZXhwIjoxNzQxNjA4ODkzLCJpYXQiOjE3NDE1MjI0OTN9.nqCCRUnuuK5aRHP6j15pW6za437KSJrCaEQXpGJreaM
+POSTGRES: 2025/03/09 17:15:20 post.go:79: GetPost: So`rov qabul qilindi: id=0e027dad-d1e0-4b38-991b-5d2262af393e
+POSTGRES: 2025/03/09 17:15:20 post.go:93: GetPost: Muvaffaqiyatli yakunlandi: id=0e027dad-d1e0-4b38-991b-5d2262af393e

@@ -16,11 +16,11 @@ type Config struct {
 
 func Configuration() *Config {
 	c := &Config{}
-	c.ApiGateway.Port = osGetenv("API_GATEWAY", "localhost:7777")
+	c.ApiGateway.Port = osGetenv("API_GATEWAY", "api_gateway:7777")
 
-	c.User.Port = osGetenv("USER_PORT", "localhost:8888")
+	c.User.Port = osGetenv("USER_PORT", "user_service:8888")
 
-	c.Post.Port = osGetenv("POST_PORT", "localhost:9999")
+	c.Post.Port = osGetenv("POST_PORT", "post_service:9999")
 	return c
 }
 

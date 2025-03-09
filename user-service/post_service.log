@@ -1,0 +1,302 @@
+POSTGRES: 2025/03/09 14:24:14 main.go:44: gRPC server localhost:8888 portida ishga tushdi
+POSTGRES: 2025/03/09 14:26:27 main.go:56: Server to`xtatilmoqda...
+POSTGRES: 2025/03/09 14:26:27 main.go:58: Server muvaffaqiyatli to`xtatildi
+POSTGRES: 2025/03/09 14:26:30 main.go:44: gRPC server localhost:8888 portida ishga tushdi
+POSTGRES: 2025/03/09 14:27:47 user.go:21: gRPC SignUp chaqirildi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 14:27:47 service.go:30: SignUp boshlandi: email=yusupovabduazim0811@gmail.com, username=Abdu0811
+POSTGRES: 2025/03/09 14:27:48 postgres.go:22: CreateUsers boshlandi: username=Abdu0811, email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 14:27:48 postgres.go:48: CreateUsers: Foydalanuvchi qo`shishda xato: pq: relation "users" does not exist
+POSTGRES: 2025/03/09 14:27:48 service.go:46: SignUp: Foydalanuvchi yaratishda xato: pq: relation "users" does not exist
+POSTGRES: 2025/03/09 14:27:48 user.go:32: SignUp xatosi: pq: relation "users" does not exist
+POSTGRES: 2025/03/09 14:32:14 main.go:56: Server to`xtatilmoqda...
+POSTGRES: 2025/03/09 14:32:14 main.go:58: Server muvaffaqiyatli to`xtatildi
+POSTGRES: 2025/03/09 14:32:22 main.go:44: gRPC server localhost:8888 portida ishga tushdi
+POSTGRES: 2025/03/09 14:32:30 user.go:21: gRPC SignUp chaqirildi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 14:32:30 service.go:30: SignUp boshlandi: email=yusupovabduazim0811@gmail.com, username=Abdu0811
+POSTGRES: 2025/03/09 14:32:30 postgres.go:22: CreateUsers boshlandi: username=Abdu0811, email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 14:32:30 postgres.go:47: CreateUsers: Foydalanuvchi qo`shishda xato: pq: relation "users" does not exist
+POSTGRES: 2025/03/09 14:32:30 service.go:46: SignUp: Foydalanuvchi yaratishda xato: pq: relation "users" does not exist
+POSTGRES: 2025/03/09 14:32:30 user.go:32: SignUp xatosi: pq: relation "users" does not exist
+POSTGRES: 2025/03/09 14:37:01 main.go:56: Server to`xtatilmoqda...
+POSTGRES: 2025/03/09 14:37:01 main.go:58: Server muvaffaqiyatli to`xtatildi
+POSTGRES: 2025/03/09 14:37:11 main.go:27: Ulanishlarda xato: dial tcp: lookup postgres-container on 127.0.0.53:53: server misbehaving
+POSTGRES: 2025/03/09 14:37:30 main.go:44: gRPC server localhost:8888 portida ishga tushdi
+POSTGRES: 2025/03/09 14:39:53 user.go:21: gRPC SignUp chaqirildi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 14:39:53 service.go:30: SignUp boshlandi: email=yusupovabduazim0811@gmail.com, username=Abdu
+POSTGRES: 2025/03/09 14:39:53 postgres.go:22: CreateUsers boshlandi: username=Abdu, email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 14:39:53 postgres.go:46: CreateUsers: Foydalanuvchi qo`shishda xato: pq: relation "users" does not exist
+POSTGRES: 2025/03/09 14:39:53 service.go:46: SignUp: Foydalanuvchi yaratishda xato: pq: relation "users" does not exist
+POSTGRES: 2025/03/09 14:39:53 user.go:32: SignUp xatosi: pq: relation "users" does not exist
+POSTGRES: 2025/03/09 14:41:12 main.go:56: Server to`xtatilmoqda...
+POSTGRES: 2025/03/09 14:41:12 main.go:58: Server muvaffaqiyatli to`xtatildi
+POSTGRES: 2025/03/09 14:41:49 main.go:44: gRPC server localhost:8888 portida ishga tushdi
+POSTGRES: 2025/03/09 14:41:53 user.go:21: gRPC SignUp chaqirildi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 14:41:53 service.go:30: SignUp boshlandi: email=yusupovabduazim0811@gmail.com, username=Abdu
+POSTGRES: 2025/03/09 14:41:53 postgres.go:22: CreateUsers boshlandi: username=Abdu, email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 14:41:53 postgres.go:46: CreateUsers: Foydalanuvchi qo`shishda xato: pq: relation "userss" does not exist
+POSTGRES: 2025/03/09 14:41:53 service.go:46: SignUp: Foydalanuvchi yaratishda xato: pq: relation "userss" does not exist
+POSTGRES: 2025/03/09 14:41:53 user.go:32: SignUp xatosi: pq: relation "userss" does not exist
+POSTGRES: 2025/03/09 14:43:16 main.go:56: Server to`xtatilmoqda...
+POSTGRES: 2025/03/09 14:43:16 main.go:58: Server muvaffaqiyatli to`xtatildi
+POSTGRES: 2025/03/09 14:48:54 main.go:44: gRPC server localhost:8888 portida ishga tushdi
+POSTGRES: 2025/03/09 14:48:59 user.go:21: gRPC SignUp chaqirildi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 14:48:59 service.go:30: SignUp boshlandi: email=yusupovabduazim0811@gmail.com, username=Abdu
+POSTGRES: 2025/03/09 14:48:59 postgres.go:22: CreateUsers boshlandi: username=Abdu, email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 14:48:59 postgres.go:46: CreateUsers: Foydalanuvchi qo`shishda xato: pq: relation "public.users" does not exist
+POSTGRES: 2025/03/09 14:48:59 service.go:46: SignUp: Foydalanuvchi yaratishda xato: pq: relation "public.users" does not exist
+POSTGRES: 2025/03/09 14:48:59 user.go:32: SignUp xatosi: pq: relation "public.users" does not exist
+POSTGRES: 2025/03/09 14:51:29 main.go:56: Server to`xtatilmoqda...
+POSTGRES: 2025/03/09 14:51:29 main.go:58: Server muvaffaqiyatli to`xtatildi
+POSTGRES: 2025/03/09 14:51:36 main.go:44: gRPC server localhost:8888 portida ishga tushdi
+POSTGRES: 2025/03/09 14:52:09 user.go:21: gRPC SignUp chaqirildi: email=yusupovabduazim0811
+POSTGRES: 2025/03/09 14:52:09 service.go:30: SignUp boshlandi: email=yusupovabduazim0811, username=Abdu0811
+POSTGRES: 2025/03/09 14:52:09 postgres.go:22: CreateUsers boshlandi: username=Abdu0811, email=yusupovabduazim0811
+POSTGRES: 2025/03/09 14:52:10 postgres.go:46: CreateUsers: Foydalanuvchi qo`shishda xato: pq: relation "public.users" does not exist
+POSTGRES: 2025/03/09 14:52:10 service.go:46: SignUp: Foydalanuvchi yaratishda xato: pq: relation "public.users" does not exist
+POSTGRES: 2025/03/09 14:52:10 user.go:32: SignUp xatosi: pq: relation "public.users" does not exist
+POSTGRES: 2025/03/09 14:55:43 main.go:56: Server to`xtatilmoqda...
+POSTGRES: 2025/03/09 14:55:43 main.go:58: Server muvaffaqiyatli to`xtatildi
+POSTGRES: 2025/03/09 14:56:46 main.go:44: gRPC server localhost:8888 portida ishga tushdi
+POSTGRES: 2025/03/09 14:57:57 user.go:21: gRPC SignUp chaqirildi: email=string
+POSTGRES: 2025/03/09 14:57:57 service.go:30: SignUp boshlandi: email=string, username=string
+POSTGRES: 2025/03/09 14:57:57 postgres.go:22: CreateUsers boshlandi: username=string, email=string
+POSTGRES: 2025/03/09 14:57:57 postgres.go:46: CreateUsers: Foydalanuvchi qo`shishda xato: pq: relation "public.users" does not exist
+POSTGRES: 2025/03/09 14:57:57 service.go:46: SignUp: Foydalanuvchi yaratishda xato: pq: relation "public.users" does not exist
+POSTGRES: 2025/03/09 14:57:57 user.go:32: SignUp xatosi: pq: relation "public.users" does not exist
+POSTGRES: 2025/03/09 14:57:58 user.go:21: gRPC SignUp chaqirildi: email=string
+POSTGRES: 2025/03/09 14:57:58 service.go:30: SignUp boshlandi: email=string, username=string
+POSTGRES: 2025/03/09 14:57:58 postgres.go:22: CreateUsers boshlandi: username=string, email=string
+POSTGRES: 2025/03/09 14:57:58 postgres.go:46: CreateUsers: Foydalanuvchi qo`shishda xato: pq: relation "public.users" does not exist
+POSTGRES: 2025/03/09 14:57:58 service.go:46: SignUp: Foydalanuvchi yaratishda xato: pq: relation "public.users" does not exist
+POSTGRES: 2025/03/09 14:57:58 user.go:32: SignUp xatosi: pq: relation "public.users" does not exist
+POSTGRES: 2025/03/09 14:58:15 main.go:56: Server to`xtatilmoqda...
+POSTGRES: 2025/03/09 14:58:15 main.go:58: Server muvaffaqiyatli to`xtatildi
+POSTGRES: 2025/03/09 14:58:22 main.go:44: gRPC server localhost:8888 portida ishga tushdi
+POSTGRES: 2025/03/09 14:58:39 user.go:21: gRPC SignUp chaqirildi: email=string
+POSTGRES: 2025/03/09 14:58:39 service.go:30: SignUp boshlandi: email=string, username=string
+POSTGRES: 2025/03/09 14:58:40 postgres.go:22: CreateUsers boshlandi: username=string, email=string
+POSTGRES: 2025/03/09 14:58:40 postgres.go:46: CreateUsers: Foydalanuvchi qo`shishda xato: pq: relation "users" does not exist
+POSTGRES: 2025/03/09 14:58:40 service.go:46: SignUp: Foydalanuvchi yaratishda xato: pq: relation "users" does not exist
+POSTGRES: 2025/03/09 14:58:40 user.go:32: SignUp xatosi: pq: relation "users" does not exist
+POSTGRES: 2025/03/09 15:16:08 main.go:56: Server to`xtatilmoqda...
+POSTGRES: 2025/03/09 15:16:08 main.go:58: Server muvaffaqiyatli to`xtatildi
+POSTGRES: 2025/03/09 15:19:55 main.go:44: gRPC server localhost:8888 portida ishga tushdi
+POSTGRES: 2025/03/09 15:20:16 user.go:21: gRPC SignUp chaqirildi: email=string
+POSTGRES: 2025/03/09 15:20:16 service.go:30: SignUp boshlandi: email=string, username=string
+POSTGRES: 2025/03/09 15:20:16 postgres.go:22: CreateUsers boshlandi: username=string, email=string
+POSTGRES: 2025/03/09 15:20:16 postgres.go:46: CreateUsers: Foydalanuvchi qo`shishda xato: pq: relation "users" does not exist
+POSTGRES: 2025/03/09 15:20:16 service.go:46: SignUp: Foydalanuvchi yaratishda xato: pq: relation "users" does not exist
+POSTGRES: 2025/03/09 15:20:16 user.go:32: SignUp xatosi: pq: relation "users" does not exist
+POSTGRES: 2025/03/09 15:20:55 main.go:56: Server to`xtatilmoqda...
+POSTGRES: 2025/03/09 15:20:55 main.go:58: Server muvaffaqiyatli to`xtatildi
+POSTGRES: 2025/03/09 15:21:12 main.go:44: gRPC server localhost:8888 portida ishga tushdi
+POSTGRES: 2025/03/09 15:21:15 user.go:21: gRPC SignUp chaqirildi: email=string
+POSTGRES: 2025/03/09 15:21:15 service.go:30: SignUp boshlandi: email=string, username=string
+POSTGRES: 2025/03/09 15:21:15 postgres.go:22: CreateUsers boshlandi: username=string, email=string
+POSTGRES: 2025/03/09 15:21:15 postgres.go:46: CreateUsers: Foydalanuvchi qo`shishda xato: pq: relation "users" does not exist
+POSTGRES: 2025/03/09 15:21:15 service.go:46: SignUp: Foydalanuvchi yaratishda xato: pq: relation "users" does not exist
+POSTGRES: 2025/03/09 15:21:15 user.go:32: SignUp xatosi: pq: relation "users" does not exist
+POSTGRES: 2025/03/09 15:21:19 main.go:56: Server to`xtatilmoqda...
+POSTGRES: 2025/03/09 15:21:19 main.go:58: Server muvaffaqiyatli to`xtatildi
+POSTGRES: 2025/03/09 15:22:14 main.go:44: gRPC server localhost:8888 portida ishga tushdi
+POSTGRES: 2025/03/09 15:22:47 user.go:21: gRPC SignUp chaqirildi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 15:22:47 service.go:30: SignUp boshlandi: email=yusupovabduazim0811@gmail.com, username=Abdu0811
+POSTGRES: 2025/03/09 15:22:47 postgres.go:22: CreateUsers boshlandi: username=Abdu0811, email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 15:22:47 postgres.go:50: CreateUsers muvaffaqiyatli yakunlandi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:22:47 redis.go:22: SetUser: Redis`ga keshlash boshlandi: key=user:yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 15:22:47 redis.go:36: SetUser: Redis`ga muvaffaqiyatli keshlandi: key=user:yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 15:22:47 jwt.go:21: GenerateToken boshlandi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 15:22:47 jwt.go:38: GenerateToken muvaffaqiyatli yakunlandi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 15:22:47 service.go:70: SignUp muvaffaqiyatli yakunlandi: email=yusupovabduazim0811@gmail.com, id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:30:46 main.go:56: Server to`xtatilmoqda...
+POSTGRES: 2025/03/09 15:30:46 main.go:58: Server muvaffaqiyatli to`xtatildi
+POSTGRES: 2025/03/09 15:30:52 main.go:44: gRPC server localhost:8888 portida ishga tushdi
+POSTGRES: 2025/03/09 15:33:10 main.go:56: Server to`xtatilmoqda...
+POSTGRES: 2025/03/09 15:33:10 main.go:58: Server muvaffaqiyatli to`xtatildi
+POSTGRES: 2025/03/09 15:33:18 main.go:44: gRPC server localhost:8888 portida ishga tushdi
+POSTGRES: 2025/03/09 15:37:16 user.go:42: gRPC SignIn chaqirildi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 15:37:16 service.go:75: SignIn boshlandi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 15:37:16 postgres.go:55: SignInUsers boshlandi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 15:37:16 postgres.go:73: SignInUsers: Ma`lumot olishda xato: pq: column "password" does not exist
+POSTGRES: 2025/03/09 15:37:16 service.go:82: SignIn: Foydalanuvchi ma'lumotlarini olishda xato: pq: column "password" does not exist
+POSTGRES: 2025/03/09 15:37:16 user.go:51: SignIn xatosi: pq: column "password" does not exist
+POSTGRES: 2025/03/09 15:38:12 main.go:56: Server to`xtatilmoqda...
+POSTGRES: 2025/03/09 15:38:12 main.go:58: Server muvaffaqiyatli to`xtatildi
+POSTGRES: 2025/03/09 15:38:17 main.go:44: gRPC server localhost:8888 portida ishga tushdi
+POSTGRES: 2025/03/09 15:38:57 user.go:42: gRPC SignIn chaqirildi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 15:38:57 service.go:75: SignIn boshlandi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 15:38:57 postgres.go:55: SignInUsers boshlandi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 15:38:57 postgres.go:79: SignInUsers muvaffaqiyatli yakunlandi:
+POSTGRES: 2025/03/09 15:38:57 jwt.go:21: GenerateToken boshlandi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 15:38:57 jwt.go:38: GenerateToken muvaffaqiyatli yakunlandi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 15:38:57 service.go:103: SignIn muvaffaqiyatli yakunlandi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 15:39:14 user.go:88: gRPC GetUsers chaqirildi
+POSTGRES: 2025/03/09 15:39:14 service.go:142: GetUsers boshlandi
+POSTGRES: 2025/03/09 15:39:14 redis.go:97: GetUsers: Redis`dan olish boshlandi: key=users:all
+POSTGRES: 2025/03/09 15:39:14 redis.go:101: GetUsers: Redis`da topilmadi: key=users:all
+POSTGRES: 2025/03/09 15:39:14 postgres.go:115: GetUsers boshlandi
+POSTGRES: 2025/03/09 15:39:14 postgres.go:146: GetUsers muvaffaqiyatli yakunlandi: jami=1
+POSTGRES: 2025/03/09 15:39:14 redis.go:78: SetUsers: Redis`ga keshlash boshlandi: key=users:all
+POSTGRES: 2025/03/09 15:39:14 redis.go:92: SetUsers: Redis`ga muvaffaqiyatli keshlandi: key=users:all, jami=1
+POSTGRES: 2025/03/09 15:39:14 service.go:165: GetUsers muvaffaqiyatli yakunlandi: jami=1
+POSTGRES: 2025/03/09 15:43:52 main.go:44: gRPC server localhost:8888 portida ishga tushdi
+POSTGRES: 2025/03/09 15:44:56 user.go:42: gRPC SignIn chaqirildi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 15:44:56 service.go:75: SignIn boshlandi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 15:44:56 postgres.go:55: SignInUsers boshlandi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 15:44:56 postgres.go:79: SignInUsers muvaffaqiyatli yakunlandi:
+POSTGRES: 2025/03/09 15:44:56 jwt.go:21: GenerateToken boshlandi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 15:44:56 jwt.go:38: GenerateToken muvaffaqiyatli yakunlandi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 15:44:56 service.go:103: SignIn muvaffaqiyatli yakunlandi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 15:45:14 user.go:88: gRPC GetUsers chaqirildi
+POSTGRES: 2025/03/09 15:45:14 service.go:142: GetUsers boshlandi
+POSTGRES: 2025/03/09 15:45:14 redis.go:97: GetUsers: Redis`dan olish boshlandi: key=users:all
+POSTGRES: 2025/03/09 15:45:14 redis.go:116: GetUsers: Redis`dan muvaffaqiyatli olindi: key=users:all, jami=1
+POSTGRES: 2025/03/09 15:45:14 service.go:150: GetUsers: Redisdan olindi: jami=1
+POSTGRES: 2025/03/09 15:45:31 user.go:61: gRPC GetUsersById chaqirildi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:45:31 service.go:108: GetUsersById boshlandi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:45:31 redis.go:41: GetUser: Redis`dan olish boshlandi: key=user:56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:45:31 redis.go:45: GetUser: Redis`da topilmadi: key=user:56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:45:31 postgres.go:84: GetUsersById boshlandi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:45:31 postgres.go:110: GetUsersById muvaffaqiyatli yakunlandi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:45:31 redis.go:22: SetUser: Redis`ga keshlash boshlandi: key=user:56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:45:31 redis.go:36: SetUser: Redis`ga muvaffaqiyatli keshlandi: key=user:56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:45:31 service.go:137: GetUsersById muvaffaqiyatli yakunlandi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:45:55 user.go:116: gRPC UpdateUsers chaqirildi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:45:55 service.go:170: UpdateUsers boshlandi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:45:55 postgres.go:153: UpdateUsers boshlandi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:45:55 postgres.go:182: UpdateUsers: Yangilashda xato: pq: column "deleted_at" does not exist
+POSTGRES: 2025/03/09 15:45:55 service.go:192: UpdateUsers: Postgres`da yangilashda xato: pq: column "deleted_at" does not exist
+POSTGRES: 2025/03/09 15:45:55 user.go:128: UpdateUsers xatosi: pq: column "deleted_at" does not exist
+POSTGRES: 2025/03/09 15:46:39 main.go:56: Server to`xtatilmoqda...
+POSTGRES: 2025/03/09 15:46:39 main.go:58: Server muvaffaqiyatli to`xtatildi
+POSTGRES: 2025/03/09 15:47:50 main.go:44: gRPC server localhost:8888 portida ishga tushdi
+POSTGRES: 2025/03/09 15:47:59 user.go:116: gRPC UpdateUsers chaqirildi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:47:59 service.go:170: UpdateUsers boshlandi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:47:59 postgres.go:153: UpdateUsers boshlandi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:47:59 postgres.go:191: UpdateUsers muvaffaqiyatli yakunlandi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:47:59 postgres.go:84: GetUsersById boshlandi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:47:59 postgres.go:110: GetUsersById muvaffaqiyatli yakunlandi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:47:59 redis.go:22: SetUser: Redis`ga keshlash boshlandi: key=user:56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:47:59 redis.go:36: SetUser: Redis`ga muvaffaqiyatli keshlandi: key=user:56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:47:59 redis.go:65: DeleteUser: Redis`dan o‘chirish boshlandi: key=users:all
+POSTGRES: 2025/03/09 15:47:59 redis.go:73: DeleteUser: Redis`dan muvaffaqiyatli o‘chirildi: key=users:all
+POSTGRES: 2025/03/09 15:47:59 service.go:209: UpdateUsers muvaffaqiyatli yakunlandi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:48:08 user.go:61: gRPC GetUsersById chaqirildi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:48:08 service.go:108: GetUsersById boshlandi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:48:08 redis.go:41: GetUser: Redis`dan olish boshlandi: key=user:56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:48:08 redis.go:60: GetUser: Redis`dan muvaffaqiyatli olindi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:48:08 service.go:116: GetUsersById: Redis`dan olindi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:48:41 user.go:138: gRPC DeleteUsers chaqirildi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:48:41 service.go:214: DeleteUsers boshlandi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:48:41 postgres.go:196: DeleteUsers boshlandi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:48:41 postgres.go:211: DeleteUsers: O`chirishda xato: pq: column "deleted_at" of relation "users" does not exist
+POSTGRES: 2025/03/09 15:48:41 service.go:218: DeleteUsers: Postgres`da o`chirishda xato: pq: column "deleted_at" of relation "users" does not exist
+POSTGRES: 2025/03/09 15:48:41 user.go:146: DeleteUsers xatosi: pq: column "deleted_at" of relation "users" does not exist
+POSTGRES: 2025/03/09 15:48:56 main.go:56: Server to`xtatilmoqda...
+POSTGRES: 2025/03/09 15:48:56 main.go:58: Server muvaffaqiyatli to`xtatildi
+POSTGRES: 2025/03/09 15:48:58 main.go:44: gRPC server localhost:8888 portida ishga tushdi
+POSTGRES: 2025/03/09 15:49:02 user.go:138: gRPC DeleteUsers chaqirildi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:49:02 service.go:214: DeleteUsers boshlandi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:49:02 postgres.go:196: DeleteUsers boshlandi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:49:02 postgres.go:204: DeleteUsers: SQL so`rov yaratishda xato: update statements must have at least one Set clause
+POSTGRES: 2025/03/09 15:49:02 service.go:218: DeleteUsers: Postgres`da o`chirishda xato: update statements must have at least one Set clause
+POSTGRES: 2025/03/09 15:49:02 user.go:146: DeleteUsers xatosi: update statements must have at least one Set clause
+POSTGRES: 2025/03/09 15:49:35 main.go:56: Server to`xtatilmoqda...
+POSTGRES: 2025/03/09 15:49:35 main.go:58: Server muvaffaqiyatli to`xtatildi
+POSTGRES: 2025/03/09 15:49:38 main.go:44: gRPC server localhost:8888 portida ishga tushdi
+POSTGRES: 2025/03/09 15:49:40 user.go:138: gRPC DeleteUsers chaqirildi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:49:40 service.go:214: DeleteUsers boshlandi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:49:40 postgres.go:196: DeleteUsers boshlandi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:49:40 postgres.go:220: DeleteUsers muvaffaqiyatli yakunlandi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:49:40 redis.go:65: DeleteUser: Redis`dan o‘chirish boshlandi: key=user:56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:49:40 redis.go:73: DeleteUser: Redis`dan muvaffaqiyatli o‘chirildi: key=user:56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:49:40 redis.go:65: DeleteUser: Redis`dan o‘chirish boshlandi: key=users:all
+POSTGRES: 2025/03/09 15:49:40 redis.go:73: DeleteUser: Redis`dan muvaffaqiyatli o‘chirildi: key=users:all
+POSTGRES: 2025/03/09 15:49:40 service.go:232: DeleteUsers muvaffaqiyatli yakunlandi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:49:42 user.go:138: gRPC DeleteUsers chaqirildi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:49:42 service.go:214: DeleteUsers boshlandi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:49:42 postgres.go:196: DeleteUsers boshlandi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:49:42 postgres.go:216: DeleteUsers: Foydalanuvchi topilmadi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:49:42 redis.go:65: DeleteUser: Redis`dan o‘chirish boshlandi: key=user:56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:49:42 redis.go:73: DeleteUser: Redis`dan muvaffaqiyatli o‘chirildi: key=user:56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:49:42 redis.go:65: DeleteUser: Redis`dan o‘chirish boshlandi: key=users:all
+POSTGRES: 2025/03/09 15:49:42 redis.go:73: DeleteUser: Redis`dan muvaffaqiyatli o‘chirildi: key=users:all
+POSTGRES: 2025/03/09 15:49:42 service.go:232: DeleteUsers muvaffaqiyatli yakunlandi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:50:20 main.go:56: Server to`xtatilmoqda...
+POSTGRES: 2025/03/09 15:50:20 main.go:58: Server muvaffaqiyatli to`xtatildi
+POSTGRES: 2025/03/09 15:50:23 main.go:44: gRPC server localhost:8888 portida ishga tushdi
+POSTGRES: 2025/03/09 15:50:24 user.go:138: gRPC DeleteUsers chaqirildi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:50:24 service.go:214: DeleteUsers boshlandi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:50:24 postgres.go:197: DeleteUsers boshlandi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:50:24 postgres.go:217: DeleteUsers: Foydalanuvchi topilmadi: id=56950413-8299-4b19-b51c-6da821fcb1ad
+POSTGRES: 2025/03/09 15:50:24 service.go:218: DeleteUsers: Postgres`da o`chirishda xato: users not found
+POSTGRES: 2025/03/09 15:50:24 user.go:146: DeleteUsers xatosi: users not found
+POSTGRES: 2025/03/09 15:56:46 main.go:56: Server to`xtatilmoqda...
+POSTGRES: 2025/03/09 15:56:46 main.go:58: Server muvaffaqiyatli to`xtatildi
+POSTGRES: 2025/03/09 16:10:42 main.go:44: gRPC server localhost:8888 portida ishga tushdi
+POSTGRES: 2025/03/09 16:11:26 user.go:21: gRPC SignUp chaqirildi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 16:11:26 service.go:29: SignUp boshlandi: email=yusupovabduazim0811@gmail.com, username=Abdu0811
+POSTGRES: 2025/03/09 16:11:26 postgres.go:23: CreateUsers boshlandi: username=Abdu0811, email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 16:11:26 postgres.go:51: CreateUsers muvaffaqiyatli yakunlandi: id=c9956172-9f87-49c4-8234-218bfa66f69a
+POSTGRES: 2025/03/09 16:11:26 redis.go:22: SetUser: Redis`ga keshlash boshlandi: key=user:yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 16:11:26 redis.go:36: SetUser: Redis`ga muvaffaqiyatli keshlandi: key=user:yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 16:11:26 jwt.go:21: GenerateToken boshlandi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 16:11:26 jwt.go:38: GenerateToken muvaffaqiyatli yakunlandi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 16:11:26 service.go:68: SignUp muvaffaqiyatli yakunlandi: email=yusupovabduazim0811@gmail.com, id=c9956172-9f87-49c4-8234-218bfa66f69a
+POSTGRES: 2025/03/09 16:13:45 user.go:88: gRPC GetUsersByUsername chaqirildi: username=Abdu0811
+POSTGRES: 2025/03/09 16:13:45 service.go:138: GetUsersbyUsername boshlandi: username=Abdu0811
+POSTGRES: 2025/03/09 16:13:45 redis.go:41: GetUser: Redis`dan olish boshlandi: key=user:username:Abdu0811
+POSTGRES: 2025/03/09 16:13:45 redis.go:45: GetUser: Redis`da topilmadi: key=user:username:Abdu0811
+POSTGRES: 2025/03/09 16:13:45 postgres.go:116: GetUsersbyUsername boshlandi: username=Abdu0811
+POSTGRES: 2025/03/09 16:13:45 postgres.go:142: GetUsersbyUsername muvaffaqiyatli yakunlandi: username=Abdu0811
+POSTGRES: 2025/03/09 16:13:45 redis.go:22: SetUser: Redis`ga keshlash boshlandi: key=user:username:Abdu0811
+POSTGRES: 2025/03/09 16:13:45 redis.go:36: SetUser: Redis`ga muvaffaqiyatli keshlandi: key=user:username:Abdu0811
+POSTGRES: 2025/03/09 16:13:45 service.go:165: GetUsersbyUsername muvaffaqiyatli yakunlandi: username=Abdu0811
+POSTGRES: 2025/03/09 16:14:05 user.go:88: gRPC GetUsersByUsername chaqirildi: username=Abdu0811
+POSTGRES: 2025/03/09 16:14:05 service.go:138: GetUsersbyUsername boshlandi: username=Abdu0811
+POSTGRES: 2025/03/09 16:14:05 redis.go:41: GetUser: Redis`dan olish boshlandi: key=user:username:Abdu0811
+POSTGRES: 2025/03/09 16:14:05 redis.go:60: GetUser: Redis`dan muvaffaqiyatli olindi: id=c9956172-9f87-49c4-8234-218bfa66f69a
+POSTGRES: 2025/03/09 16:14:05 service.go:146: GetUsersbyUsername: Redis`dan olindi: username=Abdu0811
+POSTGRES: 2025/03/09 16:16:54 user.go:88: gRPC GetUsersByUsername chaqirildi: username=Abdu0811
+POSTGRES: 2025/03/09 16:16:54 service.go:138: GetUsersbyUsername boshlandi: username=Abdu0811
+POSTGRES: 2025/03/09 16:16:54 redis.go:41: GetUser: Redis`dan olish boshlandi: key=user:username:Abdu0811
+POSTGRES: 2025/03/09 16:16:54 redis.go:60: GetUser: Redis`dan muvaffaqiyatli olindi: id=c9956172-9f87-49c4-8234-218bfa66f69a
+POSTGRES: 2025/03/09 16:16:54 service.go:146: GetUsersbyUsername: Redis`dan olindi: username=Abdu0811
+POSTGRES: 2025/03/09 16:19:08 user.go:88: gRPC GetUsersByUsername chaqirildi: username=Abdu0811
+POSTGRES: 2025/03/09 16:19:08 service.go:138: GetUsersbyUsername boshlandi: username=Abdu0811
+POSTGRES: 2025/03/09 16:19:08 redis.go:41: GetUser: Redis`dan olish boshlandi: key=user:username:Abdu0811
+POSTGRES: 2025/03/09 16:19:08 redis.go:60: GetUser: Redis`dan muvaffaqiyatli olindi: id=c9956172-9f87-49c4-8234-218bfa66f69a
+POSTGRES: 2025/03/09 16:19:08 service.go:146: GetUsersbyUsername: Redis`dan olindi: username=Abdu0811
+POSTGRES: 2025/03/09 16:21:29 user.go:88: gRPC GetUsersByUsername chaqirildi: username=Abdu0811
+POSTGRES: 2025/03/09 16:21:29 service.go:138: GetUsersbyUsername boshlandi: username=Abdu0811
+POSTGRES: 2025/03/09 16:21:29 redis.go:41: GetUser: Redis`dan olish boshlandi: key=user:username:Abdu0811
+POSTGRES: 2025/03/09 16:21:29 redis.go:60: GetUser: Redis`dan muvaffaqiyatli olindi: id=c9956172-9f87-49c4-8234-218bfa66f69a
+POSTGRES: 2025/03/09 16:21:29 service.go:146: GetUsersbyUsername: Redis`dan olindi: username=Abdu0811
+POSTGRES: 2025/03/09 16:22:11 user.go:88: gRPC GetUsersByUsername chaqirildi: username=Abdu0811
+POSTGRES: 2025/03/09 16:22:11 service.go:138: GetUsersbyUsername boshlandi: username=Abdu0811
+POSTGRES: 2025/03/09 16:22:11 redis.go:41: GetUser: Redis`dan olish boshlandi: key=user:username:Abdu0811
+POSTGRES: 2025/03/09 16:22:11 redis.go:60: GetUser: Redis`dan muvaffaqiyatli olindi: id=c9956172-9f87-49c4-8234-218bfa66f69a
+POSTGRES: 2025/03/09 16:22:11 service.go:146: GetUsersbyUsername: Redis`dan olindi: username=Abdu0811
+POSTGRES: 2025/03/09 16:37:20 user.go:42: gRPC SignIn chaqirildi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 16:37:20 service.go:73: SignIn boshlandi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 16:37:20 postgres.go:56: SignInUsers boshlandi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 16:37:20 postgres.go:80: SignInUsers muvaffaqiyatli yakunlandi:
+POSTGRES: 2025/03/09 16:37:20 jwt.go:21: GenerateToken boshlandi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 16:37:20 jwt.go:38: GenerateToken muvaffaqiyatli yakunlandi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 16:37:20 service.go:101: SignIn muvaffaqiyatli yakunlandi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 16:57:06 user.go:42: gRPC SignIn chaqirildi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 16:57:06 service.go:73: SignIn boshlandi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 16:57:06 postgres.go:56: SignInUsers boshlandi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 16:57:06 postgres.go:80: SignInUsers muvaffaqiyatli yakunlandi:
+POSTGRES: 2025/03/09 16:57:06 jwt.go:21: GenerateToken boshlandi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 16:57:06 jwt.go:38: GenerateToken muvaffaqiyatli yakunlandi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 16:57:06 service.go:101: SignIn muvaffaqiyatli yakunlandi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 17:14:53 user.go:42: gRPC SignIn chaqirildi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 17:14:53 service.go:73: SignIn boshlandi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 17:14:53 postgres.go:56: SignInUsers boshlandi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 17:14:53 postgres.go:80: SignInUsers muvaffaqiyatli yakunlandi:
+POSTGRES: 2025/03/09 17:14:53 jwt.go:21: GenerateToken boshlandi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 17:14:53 jwt.go:38: GenerateToken muvaffaqiyatli yakunlandi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 17:14:53 service.go:101: SignIn muvaffaqiyatli yakunlandi: email=yusupovabduazim0811@gmail.com
+POSTGRES: 2025/03/09 17:35:01 main.go:56: Server to`xtatilmoqda...
+POSTGRES: 2025/03/09 17:35:01 main.go:58: Server muvaffaqiyatli to`xtatildi

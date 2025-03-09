@@ -1,9 +1,9 @@
 package userclients
 
 import (
-	"api-gateway/internal/config"
-	"api-gateway/internal/protos/userProto/userproto"
 	"log"
+	"post-service/internal/config"
+	"post-service/protos/userProto/userproto"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"

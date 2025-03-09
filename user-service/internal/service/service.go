@@ -25,11 +25,9 @@ func NewUserService(repo repository.UserRepository, cache *redis.Cache) *UserSer
 	}
 }
 
-// SignUp yangi foydalanuvchi yaratadi va token qaytaradi
 func (s *UserService) SignUp(ctx context.Context, req users.SignUpReq) (*users.Response, error) {
 	logger.Logger.Printf("SignUp boshlandi: email=%s, username=%s", req.Email, req.Username)
 
-	// Parolni hash qilish
 	passwordHash, err := bcrypt.GenerateFromPassword([]byte(req.Password), bcrypt.DefaultCost)
 	if err != nil {
 		logger.Logger.Printf("SignUp: Parolni hash qilishda xato: %v", err)
@@ -117,7 +115,6 @@ func (s *UserService) GetUsersById(ctx context.Context, req users.UsersbyId) (*u
 		return cachedUser, nil
 	}
 
-	// Postgres’dan olish
 	user, err := s.repo.GetUsersById(req)
 	if err != nil {
 		logger.Logger.Printf("GetUsersById: Postgres’dan olishda xato: %v", err)
@@ -128,13 +125,44 @@ func (s *UserService) GetUsersById(ctx context.Context, req users.UsersbyId) (*u
 		return nil, fmt.Errorf("user not found")
 	}
 
-	// Redis’ga keshlash
 	err = s.cache.SetUser(ctx, cacheKey, user, 10*time.Minute)
 	if err != nil {
 		logger.Logger.Printf("GetUsersById: Keshga saqlashda xato: %v", err)
 	}
 
 	logger.Logger.Printf("GetUsersById muvaffaqiyatli yakunlandi: id=%s", user.ID)
+	return user, nil
+}
+
+func (s *UserService) GetUsersbyUsername(ctx context.Context, req users.UsersbyUsername) (*users.User, error) {
+	logger.Logger.Printf("GetUsersbyUsername boshlandi: username=%s", req.Username)
+
+	cacheKey := fmt.Sprintf("user:username:%s", req.Username)
+	cachedUser, err := s.cache.GetUser(ctx, cacheKey)
+	if err != nil {
+		logger.Logger.Printf("GetUsersbyUsername: Redis`dan olishda xato: %v", err)
+	}
+	if cachedUser != nil {
+		logger.Logger.Printf("GetUsersbyUsername: Redis`dan olindi: username=%s", cachedUser.Username)
+		return cachedUser, nil
+	}
+
+	user, err := s.repo.GetUsersbyUsername(req)
+	if err != nil {
+		logger.Logger.Printf("GetUsersbyUsername: Postgres’dan olishda xato: %v", err)
+		return nil, err
+	}
+	if user == nil {
+		logger.Logger.Printf("GetUsersbyUsername: Foydalanuvchi topilmadi: username=%s", req.Username)
+		return nil, fmt.Errorf("user not found")
+	}
+
+	err = s.cache.SetUser(ctx, cacheKey, user, 10*time.Minute)
+	if err != nil {
+		logger.Logger.Printf("GetUsersbyUsername: Keshga saqlashda xato: %v", err)
+	}
+
+	logger.Logger.Printf("GetUsersbyUsername muvaffaqiyatli yakunlandi: username=%s", user.Username)
 	return user, nil
 }
 

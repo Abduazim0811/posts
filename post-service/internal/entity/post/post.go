@@ -22,7 +22,6 @@ type GetPostRequest struct {
 }
 
 type ListPostsRequest struct {
-    Username string  `json:"user_id,omitempty"`
     Page   int32 `json:"page,omitempty"`
     Limit  int32 `json:"limit,omitempty"`
 }
@@ -39,8 +38,12 @@ type DeletePostRequest struct {
 }
 
 type PostResponse struct {
-    ID string `json:"id,omitempty"`
-    Message string `json:"message,omitempty"`
+    ID        string    `json:"id"`
+    Message   string    `json:"message"`
+    Username  string    `json:"username,omitempty"`
+    Title     string    `json:"title,omitempty"`
+    Content   string    `json:"content,omitempty"`
+    Tags      []string  `json:"tags,omitempty"`
 }
 
 type GetPostResponse struct {

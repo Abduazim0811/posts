@@ -1,0 +1,88 @@
+POSTGRES: 2025/03/09 14:25:27 main.go:25: Ulanishlarda xato: dial tcp: lookup postgres-container on 127.0.0.53:53: server misbehaving
+POSTGRES: 2025/03/09 14:26:34 main.go:42: gRPC server localhost:9999 portida ishga tushdi
+POSTGRES: 2025/03/09 15:16:06 main.go:54: Server to`xtatilmoqda...
+POSTGRES: 2025/03/09 15:16:06 main.go:56: Server muvaffaqiyatli to`xtatildi
+POSTGRES: 2025/03/09 16:10:37 main.go:45: gRPC server localhost:9999 portida ishga tushdi
+POSTGRES: 2025/03/09 16:13:45 post.go:43: gRPC CreatePost chaqirildi: username=Abdu0811, title=O‘zbekistonda Go dasturlash
+POSTGRES: 2025/03/09 16:13:45 post.go:38: verifyUsername: Foydalanuvchi tasdiqlandi: username=Abdu0811
+POSTGRES: 2025/03/09 16:13:45 postgres.go:22: CreatePost boshlandi: username=Abdu0811, title=O‘zbekistonda Go dasturlash
+POSTGRES: 2025/03/09 16:13:45 postgres.go:39: Postni saqlashda xato: sql: converting argument $4 type: unsupported type []string, a slice of string
+POSTGRES: 2025/03/09 16:13:45 post.go:58: CreatePost xatosi: sql: converting argument $4 type: unsupported type []string, a slice of string
+POSTGRES: 2025/03/09 16:14:05 post.go:43: gRPC CreatePost chaqirildi: username=Abdu0811, title=O‘zbekistonda Go dasturlash
+POSTGRES: 2025/03/09 16:14:05 post.go:38: verifyUsername: Foydalanuvchi tasdiqlandi: username=Abdu0811
+POSTGRES: 2025/03/09 16:14:05 postgres.go:22: CreatePost boshlandi: username=Abdu0811, title=O‘zbekistonda Go dasturlash
+POSTGRES: 2025/03/09 16:14:05 postgres.go:39: Postni saqlashda xato: sql: converting argument $4 type: unsupported type []string, a slice of string
+POSTGRES: 2025/03/09 16:14:05 post.go:58: CreatePost xatosi: sql: converting argument $4 type: unsupported type []string, a slice of string
+POSTGRES: 2025/03/09 16:15:34 main.go:57: Server to`xtatilmoqda...
+POSTGRES: 2025/03/09 16:15:34 main.go:59: Server muvaffaqiyatli to`xtatildi
+POSTGRES: 2025/03/09 16:16:40 main.go:45: gRPC server localhost:9999 portida ishga tushdi
+POSTGRES: 2025/03/09 16:16:54 post.go:43: gRPC CreatePost chaqirildi: username=Abdu0811, title=O‘zbekistonda Go dasturlash
+POSTGRES: 2025/03/09 16:16:54 post.go:38: verifyUsername: Foydalanuvchi tasdiqlandi: username=Abdu0811
+POSTGRES: 2025/03/09 16:16:54 postgres.go:22: CreatePost boshlandi: username=Abdu0811, title=O‘zbekistonda Go dasturlash
+POSTGRES: 2025/03/09 16:16:54 postgres.go:39: Postni saqlashda xato: sql: converting argument $4 type: unsupported type []string, a slice of string
+POSTGRES: 2025/03/09 16:16:54 post.go:58: CreatePost xatosi: sql: converting argument $4 type: unsupported type []string, a slice of string
+POSTGRES: 2025/03/09 16:19:08 post.go:43: gRPC CreatePost chaqirildi: username=Abdu0811, title=O`zbekistonda Go dasturlash
+POSTGRES: 2025/03/09 16:19:08 post.go:38: verifyUsername: Foydalanuvchi tasdiqlandi: username=Abdu0811
+POSTGRES: 2025/03/09 16:19:08 postgres.go:22: CreatePost boshlandi: username=Abdu0811, title=O`zbekistonda Go dasturlash
+POSTGRES: 2025/03/09 16:19:08 postgres.go:39: Postni saqlashda xato: sql: converting argument $4 type: unsupported type []string, a slice of string
+POSTGRES: 2025/03/09 16:19:08 post.go:58: CreatePost xatosi: sql: converting argument $4 type: unsupported type []string, a slice of string
+POSTGRES: 2025/03/09 16:21:19 main.go:57: Server to`xtatilmoqda...
+POSTGRES: 2025/03/09 16:21:19 main.go:59: Server muvaffaqiyatli to`xtatildi
+POSTGRES: 2025/03/09 16:21:25 main.go:45: gRPC server localhost:9999 portida ishga tushdi
+POSTGRES: 2025/03/09 16:21:29 post.go:43: gRPC CreatePost chaqirildi: username=Abdu0811, title=O`zbekistonda Go dasturlash
+POSTGRES: 2025/03/09 16:21:29 post.go:38: verifyUsername: Foydalanuvchi tasdiqlandi: username=Abdu0811
+POSTGRES: 2025/03/09 16:21:29 postgres.go:23: CreatePost boshlandi: username=Abdu0811, title=O`zbekistonda Go dasturlash
+POSTGRES: 2025/03/09 16:21:29 postgres.go:45: Post muvaffaqiyatli yaratildi: id=0e027dad-d1e0-4b38-991b-5d2262af393e
+POSTGRES: 2025/03/09 16:21:49 post.go:69: gRPC GetPost chaqirildi: id=0e027dad-d1e0-4b38-991b-5d2262af393e
+POSTGRES: 2025/03/09 16:21:49 service.go:57: Post keshdan olindi: id=0e027dad-d1e0-4b38-991b-5d2262af393e
+POSTGRES: 2025/03/09 16:22:11 post.go:134: gRPC UpdatePost chaqirildi: id=0e027dad-d1e0-4b38-991b-5d2262af393e
+POSTGRES: 2025/03/09 16:22:11 service.go:57: Post keshdan olindi: id=0e027dad-d1e0-4b38-991b-5d2262af393e
+POSTGRES: 2025/03/09 16:22:11 post.go:38: verifyUsername: Foydalanuvchi tasdiqlandi: username=Abdu0811
+POSTGRES: 2025/03/09 16:22:11 postgres.go:156: UpdatePost boshlandi: id=0e027dad-d1e0-4b38-991b-5d2262af393e
+POSTGRES: 2025/03/09 16:22:11 postgres.go:192: Post muvaffaqiyatli yangilandi: id=0e027dad-d1e0-4b38-991b-5d2262af393e
+POSTGRES: 2025/03/09 16:22:50 post.go:69: gRPC GetPost chaqirildi: id=0e027dad-d1e0-4b38-991b-5d2262af393e
+POSTGRES: 2025/03/09 16:22:50 service.go:57: Post keshdan olindi: id=0e027dad-d1e0-4b38-991b-5d2262af393e
+POSTGRES: 2025/03/09 16:30:37 main.go:57: Server to`xtatilmoqda...
+POSTGRES: 2025/03/09 16:30:37 main.go:59: Server muvaffaqiyatli to`xtatildi
+POSTGRES: 2025/03/09 16:36:39 main.go:45: gRPC server localhost:9999 portida ishga tushdi
+POSTGRES: 2025/03/09 16:39:56 post.go:133: gRPC UpdatePost chaqirildi: id=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Inl1c3Vwb3ZhYmR1YXppbTA4MTFAZ21haWwuY29tIiwiZXhwIjoxNzQxNjA2NjQwLCJpYXQiOjE3NDE1MjAyNDB9.6j9ledeiUnE-wslLNWYT8siZIZs90Gg5EjiduBo--tw
+POSTGRES: 2025/03/09 16:39:56 postgres.go:50: GetPost boshlandi: id=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Inl1c3Vwb3ZhYmR1YXppbTA4MTFAZ21haWwuY29tIiwiZXhwIjoxNzQxNjA2NjQwLCJpYXQiOjE3NDE1MjAyNDB9.6j9ledeiUnE-wslLNWYT8siZIZs90Gg5EjiduBo--tw
+POSTGRES: 2025/03/09 16:39:56 postgres.go:71: Postni olishda xato: pq: invalid input syntax for type uuid: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Inl1c3Vwb3ZhYmR1YXppbTA4MTFAZ21haWwuY29tIiwiZXhwIjoxNzQxNjA2NjQwLCJpYXQiOjE3NDE1MjAyNDB9.6j9ledeiUnE-wslLNWYT8siZIZs90Gg5EjiduBo--tw"
+POSTGRES: 2025/03/09 16:39:56 post.go:137: UpdatePost: Postni olishda xato: pq: invalid input syntax for type uuid: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Inl1c3Vwb3ZhYmR1YXppbTA4MTFAZ21haWwuY29tIiwiZXhwIjoxNzQxNjA2NjQwLCJpYXQiOjE3NDE1MjAyNDB9.6j9ledeiUnE-wslLNWYT8siZIZs90Gg5EjiduBo--tw"
+POSTGRES: 2025/03/09 16:52:00 main.go:57: Server to`xtatilmoqda...
+POSTGRES: 2025/03/09 16:52:00 main.go:59: Server muvaffaqiyatli to`xtatildi
+POSTGRES: 2025/03/09 16:52:07 main.go:45: gRPC server localhost:9999 portida ishga tushdi
+POSTGRES: 2025/03/09 16:57:33 post.go:95: gRPC ListPosts chaqirildi: username=, page=0, limit=0
+POSTGRES: 2025/03/09 16:57:33 postgres.go:88: ListPosts boshlandi: username=, page=0, limit=0
+POSTGRES: 2025/03/09 16:57:33 postgres.go:150: Postlar muvaffaqiyatli olindi: username=, total=0
+POSTGRES: 2025/03/09 16:57:42 post.go:95: gRPC ListPosts chaqirildi: username=, page=0, limit=0
+POSTGRES: 2025/03/09 16:57:42 service.go:84: Postlar keshdan olindi: username=
+POSTGRES: 2025/03/09 16:57:44 post.go:95: gRPC ListPosts chaqirildi: username=, page=0, limit=0
+POSTGRES: 2025/03/09 16:57:44 service.go:84: Postlar keshdan olindi: username=
+POSTGRES: 2025/03/09 16:58:43 post.go:95: gRPC ListPosts chaqirildi: username=, page=0, limit=0
+POSTGRES: 2025/03/09 16:58:43 service.go:84: Postlar keshdan olindi: username=
+POSTGRES: 2025/03/09 16:58:49 post.go:95: gRPC ListPosts chaqirildi: username=, page=0, limit=0
+POSTGRES: 2025/03/09 16:58:49 service.go:84: Postlar keshdan olindi: username=
+POSTGRES: 2025/03/09 16:58:53 post.go:95: gRPC ListPosts chaqirildi: username=, page=0, limit=0
+POSTGRES: 2025/03/09 16:58:53 service.go:84: Postlar keshdan olindi: username=
+POSTGRES: 2025/03/09 17:01:02 post.go:95: gRPC ListPosts chaqirildi: username=, page=0, limit=0
+POSTGRES: 2025/03/09 17:01:02 service.go:84: Postlar keshdan olindi: username=
+POSTGRES: 2025/03/09 17:03:08 post.go:95: gRPC ListPosts chaqirildi: username=, page=0, limit=0
+POSTGRES: 2025/03/09 17:03:08 service.go:84: Postlar keshdan olindi: username=
+POSTGRES: 2025/03/09 17:04:30 post.go:95: gRPC ListPosts chaqirildi: username=, page=0, limit=0
+POSTGRES: 2025/03/09 17:04:30 service.go:84: Postlar keshdan olindi: username=
+POSTGRES: 2025/03/09 17:08:34 post.go:69: gRPC GetPost chaqirildi: id=0e027dad-d1e0-4b38-991b-5d2262af393e
+POSTGRES: 2025/03/09 17:08:34 postgres.go:52: GetPost boshlandi: id=0e027dad-d1e0-4b38-991b-5d2262af393e
+POSTGRES: 2025/03/09 17:08:34 postgres.go:73: Postni olishda xato: sql: Scan error on column index 4, name "tags": unsupported Scan, storing driver.Value type []uint8 into type *[]string
+POSTGRES: 2025/03/09 17:08:34 post.go:77: GetPost xatosi: sql: Scan error on column index 4, name "tags": unsupported Scan, storing driver.Value type []uint8 into type *[]string
+POSTGRES: 2025/03/09 17:14:21 main.go:57: Server to`xtatilmoqda...
+POSTGRES: 2025/03/09 17:14:21 main.go:59: Server muvaffaqiyatli to`xtatildi
+POSTGRES: 2025/03/09 17:14:27 main.go:45: gRPC server localhost:9999 portida ishga tushdi
+POSTGRES: 2025/03/09 17:15:20 post.go:69: gRPC GetPost chaqirildi: id=0e027dad-d1e0-4b38-991b-5d2262af393e
+POSTGRES: 2025/03/09 17:15:20 postgres.go:52: GetPost boshlandi: id=0e027dad-d1e0-4b38-991b-5d2262af393e
+POSTGRES: 2025/03/09 17:15:20 postgres.go:77: Post muvaffaqiyatli olindi: id=0e027dad-d1e0-4b38-991b-5d2262af393e
+POSTGRES: 2025/03/09 17:21:24 main.go:57: Server to`xtatilmoqda...
+POSTGRES: 2025/03/09 17:21:24 main.go:59: Server muvaffaqiyatli to`xtatildi
+POSTGRES: 2025/03/09 17:23:59 main.go:45: gRPC server localhost:9999 portida ishga tushdi
+POSTGRES: 2025/03/09 17:35:04 main.go:57: Server to`xtatilmoqda...
+POSTGRES: 2025/03/09 17:35:04 main.go:59: Server muvaffaqiyatli to`xtatildi

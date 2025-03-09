@@ -17,6 +17,10 @@ type SignUpReq struct {
 	Fullname string
 }
 
+type UsersbyUsername struct{
+	Username string
+}
+
 type SignUpRes struct{
 	ID		string
 }

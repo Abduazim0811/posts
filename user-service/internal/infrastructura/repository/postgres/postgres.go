@@ -2,6 +2,7 @@ package postgres
 
 import (
 	"database/sql"
+	"fmt"
 	"time"
 	"user-service/internal/entity/users"
 	"user-service/internal/infrastructura/repository"
@@ -21,7 +22,6 @@ func NewUserPostgres(db *sql.DB) repository.UserRepository {
 func (u *UserPostgres) CreateUsers(req users.SignUpReq) (*users.User, error) {
 	logger.Logger.Printf("CreateUsers boshlandi: username=%s, email=%s", req.Username, req.Email)
 
-	// SQL so‘rovni tayyorlash
 	sqlQuery, args, err := squirrel.
 		Insert("users").
 		Columns("username", "email", "password_hash", "full_name").
@@ -34,7 +34,6 @@ func (u *UserPostgres) CreateUsers(req users.SignUpReq) (*users.User, error) {
 		return nil, err
 	}
 
-	// Foydalanuvchi ma'lumotlarini olish
 	var user users.User
 	err = u.db.QueryRow(sqlQuery, args...).Scan(
 		&user.ID,
@@ -50,14 +49,14 @@ func (u *UserPostgres) CreateUsers(req users.SignUpReq) (*users.User, error) {
 	}
 
 	logger.Logger.Printf("CreateUsers muvaffaqiyatli yakunlandi: id=%s", user.ID)
-	return &users.User{ID: user.ID}, nil
+	return &user, nil
 }
 
 func (u *UserPostgres) SignInUsers(req users.SignINReq) (string, error) {
 	logger.Logger.Printf("SignInUsers boshlandi: email=%s", req.Email)
 	var password string
 	sqlQuery, args, err := squirrel.
-		Select("password").
+		Select("password_hash").
 		From("users").
 		Where(squirrel.Eq{"email": req.Email}).
 		PlaceholderFormat(squirrel.Dollar).
@@ -113,6 +112,37 @@ func (u *UserPostgres) GetUsersById(req users.UsersbyId) (*users.User, error) {
 	return &user, nil
 }
 
+func (u *UserPostgres) GetUsersbyUsername(req users.UsersbyUsername) (*users.User, error) {
+	logger.Logger.Printf("GetUsersbyUsername boshlandi: username=%s", req.Username)
+
+	sqlQuery, args, err := squirrel.
+		Select("id", "email", "username", "full_name", "created_at", "updated_at").
+		From("users").
+		Where(squirrel.Eq{"username": req.Username}).
+		PlaceholderFormat(squirrel.Dollar).
+		ToSql()
+	if err != nil {
+		logger.Logger.Printf("GetUsersbyUsername: SQL so`rov yaratishda xato: %v", err)
+		return nil, err
+	}
+
+	var user users.User
+	err = u.db.QueryRow(sqlQuery, args...).Scan(
+		&user.ID, &user.Email, &user.Username, &user.Fullname, &user.CreatedAt, &user.UpdatedAt,
+	)
+	if err != nil {
+		if err == sql.ErrNoRows {
+			logger.Logger.Printf("GetUsersbyUsername: Foydalanuvchi topilmadi: username=%s", req.Username)
+			return nil, nil
+		}
+		logger.Logger.Printf("GetUsersbyUsername: Ma`lumot olishda xato: %v", err)
+		return nil, err
+	}
+
+	logger.Logger.Printf("GetUsersbyUsername muvaffaqiyatli yakunlandi: username=%s", user.Username)
+	return &user, nil
+}
+
 func (u *UserPostgres) GetUsers() (*users.ListUsersRes, error) {
 	logger.Logger.Println("GetUsers boshlandi")
 
@@ -163,7 +193,7 @@ func (u *UserPostgres) UpdateUsers(req users.UpdateReq) (*users.UpdateRes, error
 		updateBuilder = updateBuilder.Set("username", req.Username)
 	}
 	if req.Password != "" {
-		updateBuilder = updateBuilder.Set("password", req.Password)
+		updateBuilder = updateBuilder.Set("password_hash", req.Password)
 	}
 	if req.Fullname != "" {
 		updateBuilder = updateBuilder.Set("full_name", req.Fullname)
@@ -171,7 +201,6 @@ func (u *UserPostgres) UpdateUsers(req users.UpdateReq) (*users.UpdateRes, error
 	updateBuilder = updateBuilder.Set("updated_at", time.Now().Format(time.RFC3339))
 
 	sqlQuery, args, err := updateBuilder.
-		Where(squirrel.Eq{"deleted_at": nil}).
 		PlaceholderFormat(squirrel.Dollar).
 		ToSql()
 	if err != nil {
@@ -199,8 +228,7 @@ func (u *UserPostgres) DeleteUsers(req users.UsersbyId) (*users.UpdateRes, error
 	logger.Logger.Printf("DeleteUsers boshlandi: id=%s", req.ID)
 
 	sqlQuery, args, err := squirrel.
-		Update("users").
-		Set("deleted_at", time.Now().Format(time.RFC3339)).
+		Delete("users").
 		Where(squirrel.Eq{"id": req.ID}).
 		PlaceholderFormat(squirrel.Dollar).
 		ToSql()
@@ -218,7 +246,7 @@ func (u *UserPostgres) DeleteUsers(req users.UsersbyId) (*users.UpdateRes, error
 	rowsAffected, err := result.RowsAffected()
 	if err != nil || rowsAffected == 0 {
 		logger.Logger.Printf("DeleteUsers: Foydalanuvchi topilmadi: id=%s", req.ID)
-		return &users.UpdateRes{Message: "User not found"}, nil
+		return nil, fmt.Errorf("users not found")
 	}
 
 	logger.Logger.Printf("DeleteUsers muvaffaqiyatli yakunlandi: id=%s", req.ID)

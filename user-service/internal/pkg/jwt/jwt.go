@@ -8,7 +8,7 @@ import (
 )
 
 var (
-	SecretKey = "abduazim11"      
+	SecretKey = "abduazim"      
 	ExpiresIn = 24*time.Hour
 )
 

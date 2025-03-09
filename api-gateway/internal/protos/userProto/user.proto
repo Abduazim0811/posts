@@ -6,7 +6,6 @@ service UserService{
     rpc SignUp(SignUpReq) returns(Response);
     rpc SignIn(SignINReq) returns(Response);
     rpc GetUsersbyId(UsersbyId) returns(User);
-    rpc GetUsersbyUsername(GetbyUsernameReq) returns(User);
     rpc GetUsers(UsersEmpty) returns(ListUsersRes);
     rpc UpdateUsers(UpdateReq) returns(UpdateRes);
     rpc DeleteUsers(UsersbyId) returns(UpdateRes);
@@ -44,10 +43,6 @@ message UsersbyId{
 }
 
 message UsersEmpty{}
-
-message GetbyUsernameReq{
-    string username = 1;
-}
 
 message ListUsersRes{
     repeated User users = 1;

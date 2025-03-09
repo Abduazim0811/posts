@@ -1,0 +1,493 @@
+definitions:
+  postproto.CreatePostRequest:
+    properties:
+      content:
+        type: string
+      tags:
+        items:
+          type: string
+        type: array
+      title:
+        type: string
+      username:
+        type: string
+    type: object
+  postproto.DeletePostResponse:
+    properties:
+      message:
+        type: string
+    type: object
+  postproto.GetPostResponse:
+    properties:
+      content:
+        type: string
+      id:
+        type: string
+      tags:
+        items:
+          type: string
+        type: array
+      title:
+        type: string
+      username:
+        type: string
+    type: object
+  postproto.ListPostsResponse:
+    properties:
+      message:
+        type: string
+      posts:
+        items:
+          $ref: '#/definitions/postproto.GetPostResponse'
+        type: array
+      total:
+        type: integer
+    type: object
+  postproto.PostResponse:
+    properties:
+      content:
+        type: string
+      id:
+        type: string
+      message:
+        type: string
+      tags:
+        items:
+          type: string
+        type: array
+      title:
+        type: string
+      username:
+        type: string
+    type: object
+  postproto.UpdatePostRequest:
+    properties:
+      content:
+        type: string
+      id:
+        type: string
+      tags:
+        items:
+          type: string
+        type: array
+      title:
+        type: string
+    type: object
+  userproto.ListUsersRes:
+    properties:
+      users:
+        items:
+          $ref: '#/definitions/userproto.User'
+        type: array
+    type: object
+  userproto.Response:
+    properties:
+      token:
+        type: string
+    type: object
+  userproto.SignINReq:
+    properties:
+      email:
+        type: string
+      password:
+        type: string
+    type: object
+  userproto.SignUpReq:
+    properties:
+      email:
+        type: string
+      fullname:
+        type: string
+      password:
+        type: string
+      username:
+        type: string
+    type: object
+  userproto.UpdateReq:
+    properties:
+      email:
+        type: string
+      fullname:
+        type: string
+      id:
+        type: string
+      password:
+        type: string
+      username:
+        type: string
+    type: object
+  userproto.UpdateRes:
+    properties:
+      message:
+        type: string
+    type: object
+  userproto.User:
+    properties:
+      created_at:
+        type: string
+      email:
+        type: string
+      fullname:
+        type: string
+      id:
+        type: string
+      password:
+        type: string
+      updated_at:
+        type: string
+      username:
+        type: string
+    type: object
+info:
+  contact: {}
+  description: This is an API Gateway for managing posts in a blogging system.
+  title: Post Service API
+  version: "1.0"
+paths:
+  /posts:
+    get:
+      consumes:
+      - application/json
+      description: Get a list of all posts
+      parameters:
+      - description: Username to filter posts
+        in: query
+        name: username
+        type: string
+      - default: 1
+        description: Page number
+        in: query
+        name: page
+        type: integer
+      - default: 10
+        description: Number of items per page
+        in: query
+        name: limit
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/postproto.ListPostsResponse'
+        "400":
+          description: Bad Request
+          schema:
+            type: string
+        "500":
+          description: Internal Server Error
+          schema:
+            type: string
+      security:
+      - Bearer: []
+      summary: Get all posts
+      tags:
+      - post
+    post:
+      consumes:
+      - application/json
+      description: Create a new post
+      parameters:
+      - description: Create post request body
+        in: body
+        name: post
+        required: true
+        schema:
+          $ref: '#/definitions/postproto.CreatePostRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/postproto.PostResponse'
+        "400":
+          description: Bad Request
+          schema:
+            type: string
+        "500":
+          description: Internal Server Error
+          schema:
+            type: string
+      security:
+      - Bearer: []
+      summary: Create a new post
+      tags:
+      - post
+  /posts/{id}:
+    delete:
+      description: Delete an existing post by its ID
+      parameters:
+      - description: Post ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/postproto.DeletePostResponse'
+        "400":
+          description: Bad Request
+          schema:
+            type: string
+        "500":
+          description: Internal Server Error
+          schema:
+            type: string
+      security:
+      - Bearer: []
+      summary: Delete a post
+      tags:
+      - post
+    get:
+      description: Get details of a specific post by its ID
+      parameters:
+      - description: Post ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/postproto.GetPostResponse'
+        "400":
+          description: Bad Request
+          schema:
+            type: string
+        "500":
+          description: Internal Server Error
+          schema:
+            type: string
+      security:
+      - Bearer: []
+      summary: Get a post by ID
+      tags:
+      - post
+    put:
+      consumes:
+      - application/json
+      description: Update an existing post by its ID
+      parameters:
+      - description: Post ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Post update request body
+        in: body
+        name: post
+        required: true
+        schema:
+          $ref: '#/definitions/postproto.UpdatePostRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/postproto.PostResponse'
+        "400":
+          description: Bad Request
+          schema:
+            type: string
+        "500":
+          description: Internal Server Error
+          schema:
+            type: string
+      security:
+      - Bearer: []
+      summary: Update a post
+      tags:
+      - post
+  /signin:
+    post:
+      consumes:
+      - application/json
+      description: Foydalanuvchi email va parol bilan kiradi va token oladi
+      parameters:
+      - description: Kirish so`rovi
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/userproto.SignINReq'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Muvaffaqiyatli kirish
+          schema:
+            $ref: '#/definitions/userproto.Response'
+        "400":
+          description: Bad Request
+          schema:
+            type: string
+        "401":
+          description: Unauthorized
+          schema:
+            type: string
+      summary: Foydalanuvchi tizimga kirishi
+      tags:
+      - users
+  /signup:
+    post:
+      consumes:
+      - application/json
+      description: Yangi foydalanuvchi yaratadi va token qaytaradi
+      parameters:
+      - description: Ro`yxatdan o`tish so`rovi
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/userproto.SignUpReq'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/userproto.Response'
+        "400":
+          description: Bad Request
+          schema:
+            type: string
+        "500":
+          description: Internal Server Error
+          schema:
+            type: string
+      summary: Foydalanuvchini ro`yxatdan o`tkazish
+      tags:
+      - users
+  /users:
+    get:
+      description: Barcha foydalanuvchilar ro`yxatini qaytaradi
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Foydalanuvchilar ro`yxati
+          schema:
+            $ref: '#/definitions/userproto.ListUsersRes'
+        "500":
+          description: Internal Server Error
+          schema:
+            type: string
+      security:
+      - Bearer: []
+      summary: Barcha foydalanuvchilar ro`yxatini olish
+      tags:
+      - users
+  /users/{id}:
+    delete:
+      description: ID bo`yicha foydalanuvchini o`chiradi
+      parameters:
+      - description: Foydalanuvchi ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Muvaffaqiyatli o`chirildi
+          schema:
+            $ref: '#/definitions/userproto.UpdateRes'
+        "400":
+          description: Bad Request
+          schema:
+            type: string
+        "500":
+          description: Internal Server Error
+          schema:
+            type: string
+      security:
+      - Bearer: []
+      summary: Foydalanuvchini o`chirish
+      tags:
+      - users
+    get:
+      description: Berilgan ID bo`yicha foydalanuvchi ma'lumotlarini qaytaradi
+      parameters:
+      - description: Foydalanuvchi ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Foydalanuvchi ma'lumotlari
+          schema:
+            $ref: '#/definitions/userproto.User'
+        "400":
+          description: Bad Request
+          schema:
+            type: string
+        "404":
+          description: Not Found
+          schema:
+            type: string
+        "500":
+          description: Internal Server Error
+          schema:
+            type: string
+      security:
+      - Bearer: []
+      summary: ID bo`yicha foydalanuvchi ma'lumotlarini olish
+      tags:
+      - users
+    put:
+      consumes:
+      - application/json
+      description: ID bo`yicha foydalanuvchi ma'lumotlarini yangilaydi
+      parameters:
+      - description: Foydalanuvchi ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Yangilash so`rovi
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/userproto.UpdateReq'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Muvaffaqiyatli yangilandi
+          schema:
+            $ref: '#/definitions/userproto.UpdateRes'
+        "400":
+          description: Bad Request
+          schema:
+            type: string
+        "500":
+          description: Internal Server Error
+          schema:
+            type: string
+      security:
+      - Bearer: []
+      summary: Foydalanuvchi ma'lumotlarini yangilash
+      tags:
+      - users
+securityDefinitions:
+  Bearer:
+    description: Enter the token in the format `Bearer {token}`
+    in: header
+    name: Authorization
+    type: apiKey
+swagger: "2.0"

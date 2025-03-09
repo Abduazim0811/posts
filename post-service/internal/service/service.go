@@ -74,14 +74,14 @@ func (s *PostService) GetPost(req post.GetPostRequest) (*post.GetPostResponse, e
 
 func (s *PostService) ListPosts(req post.ListPostsRequest) (*post.ListPostsResponse, error) {
 	ctx := context.Background()
-	cacheKey := fmt.Sprintf("posts:username:%s:page:%d:limit:%d", req.Username, req.Page, req.Limit)
+	cacheKey := fmt.Sprintf("posts:page:%d:limit:%d",req.Page, req.Limit)
 
 	cachedPosts, err := s.cache.GetPosts(ctx, cacheKey)
 	if err != nil {
 		logger.Logger.Printf("Keshdan olishda xato: %v", err)
 	}
 	if cachedPosts != nil {
-		logger.Logger.Printf("Postlar keshdan olindi: username=%s", req.Username)
+		logger.Logger.Printf("Postlar keshdan olindi:" )
 		return cachedPosts, nil
 	}
 

@@ -35,12 +35,6 @@ const docTemplate = `{
                 "summary": "Get all posts",
                 "parameters": [
                     {
-                        "type": "string",
-                        "description": "Username to filter posts",
-                        "name": "username",
-                        "in": "query"
-                    },
-                    {
                         "type": "integer",
                         "default": 1,
                         "description": "Page number",

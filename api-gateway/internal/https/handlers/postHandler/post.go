@@ -100,7 +100,6 @@ func (h *PostHandler) GetPost(c *gin.Context) {
 // @Tags post
 // @Accept json
 // @Produce json
-// @Param username query string false "Username to filter posts"
 // @Param page query int false "Page number" default(1)
 // @Param limit query int false "Number of items per page" default(10)
 // @Success 200 {object} postproto.ListPostsResponse

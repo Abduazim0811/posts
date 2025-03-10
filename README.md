@@ -57,7 +57,3 @@ docker-compose up api-gateway
 - **Docker & Docker Compose** - Service orchestration
 - **MongoDB & PostgreSQL** - Databases used for data storage
 
----
-
-## Author
-This project was developed by [Your Name].
